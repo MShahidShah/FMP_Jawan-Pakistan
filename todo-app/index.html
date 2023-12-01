@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- firebase connect -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="todo-header">
+            <h2>Todo App</h2>
+        </div>
+
+        <div class="todo-body">
+            <input type="text" id="inputField" class="todo-input" placeholder=" Add your task">
+            <!-- <input type="text" id="todoText" class="todo-input" placeholder=" Add your task"> -->
+            <!-- <button onclick="addTodo()">Add Items</button> -->
+            
+            <img onclick="addTodo()" src="image/plus.png" alt="" id="addupdateclick">
+            <!-- <button onclick="deleteAll()">Delete All</button> -->
+            <img onclick="deleteAll()" src="image/minus.png" alt="" id="addupdateclick">
+            <!-- <img src="image/plus.png" alt="" id="addupdateclick"> -->
+        </div>
+
+        <ul id="list" class="list-items"></ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
+
+<!-- stupendous-basbousa-a1f9b8.netlify.app -->
