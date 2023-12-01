@@ -4,36 +4,375 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>add to card</title>
-    <script src="https://kit.fontawesome.com/8b4964c20c.js" crossorigin="anonymous"></script>
+    <title>bootstrap project</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="header">
-        <p class="logo">LOGO</p>
-        <div class="cart"><i class="fa-solid fa-cart-shopping"></i>
-            <p id="count">0</p>
-        </div>
-    </div>
-    <div class="container">
-        <div id="root"></div>
-        <div class="sidebar">
-            <div class="head">
-                <p>My Cart</p>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><span class="text-warning">Fareed</span> Mobile Accessories</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- <a class="nav-link" href="#servies">Servies</a> -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
             </div>
-            <div id="cartItem">Your cart is empty</div>
-            <div class="foot">
-                <h3>Total</h3>
-                <h2 id="total">Rs 0.00</h2>
+        </div>
+    </nav>
+
+    <!-- Carousel Section -->
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="watch/watch_1.webp" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <h5>Smart Watches</h5>
+                    <p>All Kinds Of Smart Watches Available</p>
+                    <p><a href="#" class="btn btn-warning mt-3">Learn More</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="head-phones/hp_1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <h5>Head Phones</h5>
+                    <p>All Kinds Of Head Phones Available</p>
+                    <p><a href="#" class="btn btn-warning mt-3">Learn More</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="powerbank/powerbank_1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <h5>Power Banks</h5>
+                    <p>A Lot Of Models and mah Power Banks Available</p>
+                    <p><a href="#" class="btn btn-warning mt-3">Learn More</a></p>
+                </div>
             </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
 
+    <!-- about section -->
+
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="about-img">
+                        <img src="images/about.png" width="400px" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+                    <div class="about-text">
+                        <h2>We Provide Best Quality <br> Products Ever</h2>
+                        <p>We deal in all types of Mobile Accessories, our products to
+                            mobile charger, mobile hands-free, mobile cables, bluetooth head-phones,
+                            aux headphones, andriod watches, bluetooth, and many products ect..
+                        </p>
+                        <a href="#" class="btn btn-warning">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bluetooth Section -->
+
+    <section id="portfolio" class="portfolio section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center pb-5">
+                        <h2>Our Products</h2>
+                        <p>Bluetooth <span>Section</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-center bg-white pb-2">
+                        <div class="card-body text-dark">
+                            <div class="img-area mb-4">
+                                <img src="lenovo/len05.jpg" alt="" class="img-fluid">
+                            </div>
+                            <h3 class="card-title">Lenovo HE05 TWS Wireless Earbuds</h3>
+                            <!-- <p class="lead">Dual optical sensors</p> -->
+                            <p class="lead">The Lenovo HE05 TWS Wireless Earbuds provide up to 8 hours of power life on a single charge, allowing you to stay active with your music and calls all day..</p>
+                            <!-- <p class="lead">Double-tap to play, skip forword answer a phone call.</p> -->
+                            <button class="btn bg-warning text-dark"><a href="lenovo/len.html" target="_blank">Learn More</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-center bg-white pb-2">
+                        <div class="card-body text-dark">
+                            <div class="img-area mb-4">
+                                <img src="bluetooth/apple-airpods-pro.jpg" alt="" class="img-fluid">
+                            </div>
+                            <h3 class="card-title">AirPods Pro</h3>
+                            <p class="lead">Touch control</p>
+                            <p class="lead">Apple H2 headphone chip</p>
+                            <p class="lead">Apple U1 chip in MagSafe Charging Case (USB‑C)</p>
+                            <button class="btn bg-warning text-dark">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-center bg-white pb-2">
+                        <div class="card-body text-dark">
+                            <div class="img-area mb-4">
+                                <img src="bluetooth/m10.jpg" alt="" class="img-fluid">
+                            </div>
+                            <h3 class="card-title">M10 Tws Wireless Bluetooth Earbuds</h3>
+                            <p class="lead">Bluetooth: V5.1</p>
+                            <p class="lead">Battery storage 2000mah</p>
+                            <p class="lead">Call time: 4-5h</p>
+                            <button class="btn bg-warning text-dark"><a href="m_series/mseries.html" target="_blank">Learn More</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Watch Products Section -->
+
+    <section id="portfolio" class="portfolio section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center pb-5">
+                        <h2>Our Products</h2>
+                        <p>Watch <span>Section</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-center bg-white pb-2">
+                        <div class="card-body text-dark">
+                            <div class="img-area mb-4">
+                                <img src="watch/T800_2.webp" alt="" class="img-fluid">
+                            </div>
+                            <h3 class="card-title">T800 Ultra Watch</h3>
+                            <p class="lead">T800 Ultra Unique Design.</p>
+                            <p class="lead">1.99 Full Screen With Lagg.</p>
+                            <p class="lead">Compatible With IOS & Android Both.</p>
+                            <button class="btn bg-warning text-dark"><a href="watch/watch.html" target="_blank">Learn More</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-center bg-white pb-2">
+                        <div class="card-body text-dark">
+                            <div class="img-area mb-4">
+                                <img src="watch/gt3-pro.png" alt="" class="img-fluid">
+                            </div>
+                            <h3 class="card-title">GT3-Pro Watch</h3>
+                            <p class="lead">Works with Android and iOS</p>
+                            <p class="lead">no access to App Gallery via iOS</p>
+                            <p class="lead">One Touch Beauty settings</p>
+                            <button class="btn bg-warning text-dark"><a href="watch/watch.html" target="_blank">Learn More</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-center bg-white pb-2">
+                        <div class="card-body text-dark">
+                            <div class="img-area mb-4">
+                                <img src="watch/big.png" alt="" class="img-fluid">
+                            </div>
+                            <h3 class="card-title">Big Servies Watch</h3>
+                            <p class="lead">Big Ultra - Watch Unique Watch</p>
+                            <p class="lead">Full Screen Display Watch</p>
+                            <p class="lead">One Touch Beauty Settings</p>
+                            <button class="btn bg-warning text-dark"><a href="watch/watch.html" target="_blank">Learn More</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+
+    <section id="team" class="team section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center pb-5">
+                        <h2>Our Brands</h2>
+                        <p>Mi | Sovo | JBL | NextGeneration | Ruby</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="brand/jbl.png" alt="" class="img-fluid-circle">
+                            <h3 class="card-title py-2">JBL</h3>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Quas ad eius eligendi voluptates debitis reprehenderit.</p>
+
+                            <p class="social">
+                                <i class="bi bi-twitter text-dark mx-1"></i>
+                                <i class="bi bi-facebook text-dark mx-1"></i>
+                                <i class="bi bi-linkedin text-dark mx-1"></i>
+                                <i class="bi bi-instagram text-dark mx-1"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="brand/sovo-round.png" alt="" class="img-fluid-circle">
+                            <h3 class="card-title py-2">SOVO Power Bank</h3>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Quas ad eius eligendi voluptates debitis reprehenderit.</p>
+
+                            <p class="social">
+                                <i class="bi bi-twitter text-dark mx-1"></i>
+                                <i class="bi bi-facebook text-dark mx-1"></i>
+                                <i class="bi bi-linkedin text-dark mx-1"></i>
+                                <i class="bi bi-instagram text-dark mx-1"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="brand/mi.png" alt="" class="img-fluid-circle">
+                            <h3 class="card-title py-2">mi-Bluetooth</h3>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                 Quas ad eius eligendi voluptates debitis reprehenderit.</p>
+
+                                 <p class="social">
+                                    <i class="bi bi-twitter text-dark mx-1"></i>
+                                    <i class="bi bi-facebook text-dark mx-1"></i>
+                                    <i class="bi bi-linkedin text-dark mx-1"></i>
+                                    <i class="bi bi-instagram text-dark mx-1"></i>
+                                 </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="brand/ruby.png" alt="" class="img-fluid-circle">
+                            <h3 class="card-title py-2">Diamond Charger</h3>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                 Quas ad eius eligendi voluptates debitis reprehenderit.</p>
+
+                                 <p class="social">
+                                    <i class="bi bi-twitter text-dark mx-1"></i>
+                                    <i class="bi bi-facebook text-dark mx-1"></i>
+                                    <i class="bi bi-linkedin text-dark mx-1"></i>
+                                    <i class="bi bi-instagram text-dark mx-1"></i>
+                                 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center pb-5">
+                        <h2>Contact Us</h2>
+                        <!-- <p>Lorem ipsum, dolor sit amet consectetur<br> adipisicing elit. Voluptatibus, ex.</p> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="row m-0">
+                <div class="col-md-12 p-0 pt-4 pb-4">
+                  <form action="#" class="bg-light p-4.m-auto">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" required placeholder="Your Full Name">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <input type="email" class="form-control" required placeholder="Your Email Here">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <textarea rows="3" required class="form-control" placeholder="Your Query Here"></textarea>
+                            </div>
+                        </div>
+                        <button class="btn btn-warning btn-lg btn-block mt-3">Send Now</button>
+                    </div>
+                  </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="bg-dark p-2 text-center">
+        <div class="container">
+            <p class="text-white">All Right Reserved @Website Name</p>
+        </div>
+    </footer>
 
 
-    <script src="app.js"></script>
-    <!-- https://www.youtube.com/watch?v=sf_ac-dYh3w -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
